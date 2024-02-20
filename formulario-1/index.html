@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./asset/images.jpg" type="image/x-icon">
+</head>
+<body>
+    <header class="logo ">
+    <div class="logo1">
+        <img src="./asset/images.jpg" alt="logo" class="logo-img"/> 
+    </div>
+
+    <div class="rede-social">
+        <a class="facebook" href="https://www.facebook.com/profile.php?id=61554878385864" target="_blank">
+            <i class="fab fa-facebook"></i></a>
+
+        <a class="instagram" href="instagram.com"target=_blank >
+            <i class="fab fa-instagram"> </i></a>
+
+        <a  href="https://github.com/alexandre2627" target="_blank">
+       <i class="fab fa-github"></i></a>
+       
+       <a  href="https://www.linkedin.com/mwlite/feed/home" target="_blank">
+        <i class="fa-brands fa-linkedin-in"></i></a>
+
+    
+    </div>
+    </header>
+
+    <h1>Formulário de Contato</h1>
+        <form id="formularioContato" onsubmit="return validarFormulario()">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="mensagem">Mensagem:</label><br>
+        <textarea id="mensagem" name="mensagem" rows="4" cols="50" required></textarea><br><br>
+
+        <input class="button" type="submit" value="Enviar">
+        </form>
+        <footer>
+            <p>densenvolvido por xandy&copy; 2024 </p>
+            <p>todos os direitos resevados</p>
+        </footer>
+    <script>
+        function validarFormulario() {
+        var nome = document.getElementById("nome").value;
+        var email = document.getElementById("email").value;
+        var mensagem = document.getElementById("mensagem").value;
+
+        if (nome === "" || email === "" || mensagem === "") {
+        alert("Por favor, preencha todos os campos.");
+        return false;
+        }
+
+        if (!validarEmail(email)) {
+        alert("Email inválido. Por favor, insira um email válido.");
+        return false;
+        }
+
+        return true;
+        }
+
+        function validarEmail(email) {
+        var re = /\S+@\S+\.\S+/;
+        return re.test(email);
+        }       
+    </script>
+    <Script src= "HTTPS://kit.fontawesome.com/a747b09475.js" crossorigin="anonymous"></script>
+   
+</body>
+</html>

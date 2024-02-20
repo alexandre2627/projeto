@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Cinzel:wght@400..900&family=Comfortaa:wght@300..700&display=swap ');
+
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Caveat:wght@400..700&family=Cinzel:wght@400..900&family=Comfortaa:wght@300..700&family=Ephesis&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Tangerine:wght@400;700&display=swap');
+ 
+
+ * { box-sizing: border-box;
+      margin: 0;
+       padding: 0; 
+       list-style: none;
+       border-color: #b509ff;
+       font-family: "cinzel", sans-serif;
+     
+    }
+    a {
+        text-decoration: none;
+    }
+    
+    .logo {
+        position:  fixed;
+        background-size: cover;
+        width: 100%;
+        background-color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 9vh;
+        font-weight: bold;
+        animation: glowing 2s ease-in-out infinite alternate;
+
+    }
+    
+    .logo-img { 
+        width:  100px;
+        border-radius: 25px ; 
+    }
+    
+    .rede-social {
+      position: fixed;
+      background-size: cover;
+      display: flex;
+      column-gap: 20px;
+      padding-left: 130px;  
+    } 
+    i {
+       font-size: 2.3rem; 
+       
+    }
+    
+    i:hover {
+        color: #898888;
+    
+    }
+    .fa-facebook{
+        color:#3b5998 ;
+    }
+    .fa-instagram{
+        color:#dd2c4a ;
+    }
+    .fa-github {
+        color: #000;
+    }
+    .fa-linkedin-in {
+        color: #204aa4;
+    }
+
+ body , #mensagem , #email, #nome ,.button {
+    background-image: url("./asset/pngtree-neon-lit-sci-fi-chamber-with-dark-futuristic-ambiance-3d-rendering-image_3721697.jpg");
+    background-size: cover;
+    color: #fff;
+    
+ }   
+
+h1 {
+    font-size: 50px;
+    padding-top: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-weight:  bold;
+    text-align: left;
+    
+}
+
+#formularioContato {
+    width: 65%;
+    height: auto;
+    margin: 8% auto;
+    padding: 8% 10%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column ;
+    border-block-style:  solid;
+    font-size: 2rem;
+    box-sizing:border-box;
+}
+
+.button {
+    display: block;
+   border-radius: 4px;
+   transition: all .3s ease-in-out;
+   cursor: pointer;
+   outline: none;
+   font-size: 1.5rem;
+   line-height: 1em;
+}
+.button:hover{
+    background:#898888;
+    color: #000;
+}
+#nome { 
+    display: flex;
+    border-radius: 5px;
+    flex-wrap: wrap;
+    font-size: 1.1rem;
+}
+
+#email{
+    display: flex;
+    border-radius: 5px;
+    flex-wrap: wrap;
+    font-size: 1.1rem;
+}
+
+#mensagem{
+    display: flex;
+    border-radius: 5px;
+    flex-wrap: wrap;
+    font-size: 1.1rem;
+}
+
+footer {
+    height: 100%;
+    position: sticky;
+    background-color: #fff;
+    color: #000;
+    font-size: 25px;
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+    margin: 40px 0 20px 0;
+}
